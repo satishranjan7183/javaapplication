@@ -18,7 +18,7 @@ stages:
              script: 'mvn clean package'
          - task: CopyFiles@2
            inputs:
-             SourceFolder: 'target/JavaLoginShowcase.war'
+             SourceFolder: '$(System.DefaultWorkingDirectory)/target/JavaLoginShowcase.war'
              Contents: '**'
              TargetFolder: '${tomcatHome}/webapps/'
          - task: CmdLine@2
