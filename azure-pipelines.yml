@@ -20,7 +20,7 @@ stages:
            inputs:
              SourceFolder: '$(System.DefaultWorkingDirectory)/target/'
              Contents: '*'
-             TargetFolder: '$(tomcat_path)/.'
+             TargetFolder: '$(tomcat_path)\.'
          - task: CmdLine@2
            inputs:
              script: |
