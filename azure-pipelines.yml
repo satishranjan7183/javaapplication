@@ -13,17 +13,9 @@ stages:
     jobs:
       - job: buildproject
         steps:
-         - task: Maven@4
+         - task: CmdLine@2
            inputs:
-             mavenPomFile: 'pom.xml'
-             publishJUnitResults: true
-             testResultsFiles: '**/surefire-reports/TEST-*.xml'
-             testRunTitle: 'build'
-             javaHomeOption: 'JDKVersion'
-             mavenVersionOption: 'Default'
-             mavenAuthenticateFeed: false
-             effectivePomSkip: false
-             sonarQubeRunAnalysis: false
+             script: 'mvn clean package'
    
 
  
