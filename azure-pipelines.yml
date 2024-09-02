@@ -16,6 +16,16 @@ stages:
          - task: CmdLine@2
            inputs:
              script: 'mvn clean package'
+         - task: CopyFiles@2
+           inputs:
+             SourceFolder: 'target/JavaLoginShowcase.war'
+             Contents: '**'
+             TargetFolder: '${tomcatHome}/webapps/'
+         - task: CmdLine@2
+           inputs:
+             script: |
+               sh "${tomcatHome}/bin/shutdown.sh"
+               sh "${tomcatHome}/bin/startup.sh"
    
 
  
