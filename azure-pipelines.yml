@@ -23,8 +23,7 @@ stages:
              TargetFolder: 'C:\apache-tomcat-9.0.93\webapps'
          - task: CmdLine@2
            inputs:
-             script: |
-               C:\apache-tomcat-9.0.93\bin\shutdown.bat
+             script: 'C:\apache-tomcat-9.0.93\bin\shutdown.bat'
          - task: CmdLine@2
            inputs:
              script: 'shutdown.bat'
