@@ -20,7 +20,7 @@ stages:
            inputs:
              SourceFolder: '$(System.DefaultWorkingDirectory)/target/JavaLoginShowcase-1.0.0.war'
              Contents: '**'
-             TargetFolder: 'C:\apache-tomcat-9.0.93\webapps'
+             TargetFolder: '{tomcatHome}\webapps'
         #  - task: CmdLine@2
         #    inputs:
         #      script: |
