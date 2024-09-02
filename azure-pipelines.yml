@@ -28,4 +28,3 @@ stages:
          - task: CmdLine@2
            inputs:
               script: 'shutdown.bat'
-              workingDirectory: 'C:\apache-tomcat-9.0.93\bin'
