@@ -27,4 +27,4 @@ stages:
                cd C:\apache-tomcat-9.0.93\bin
          - task: CmdLine@2
            inputs:
-              script: 'shutdown.bat'
+             script: 'shutdown.bat'
