@@ -26,4 +26,4 @@ stages:
              script: 'C:\apache-tomcat-9.0.93\bin\shutdown.bat'
          - task: CmdLine@2
            inputs:
-             script: 'C:\apache-tomcat-9.0.93\bin\start.bat'
+             script: 'C:\apache-tomcat-9.0.93\bin\startup.bat'
