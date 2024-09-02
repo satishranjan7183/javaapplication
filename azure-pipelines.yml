@@ -25,5 +25,4 @@ stages:
            inputs:
              script: |
                cd C:\apache-tomcat-9.0.93\bin
-               shutdown.bat
-               start.bat
+             
