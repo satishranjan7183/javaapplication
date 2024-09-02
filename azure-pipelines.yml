@@ -24,10 +24,14 @@ stages:
          - task: PowerShell@2
            inputs:
              targetType: 'inline'
-             script: |
-               cd C:\apache-tomcat-9.0.93\bin
-               .\shutdown.bat
-               .\startup.bat
-   
+             script: 'cd C:\apache-tomcat-9.0.93\bin'
+         - task: PowerShell@2
+           inputs:
+             targetType: 'inline'
+             script: '.\shutdown.bat'
+         - task: PowerShell@2
+           inputs:
+             targetType: 'inline'
+             script: '.\start.bat'
 
  
