@@ -20,7 +20,7 @@ stages:
            inputs:
              SourceFolder: '$(System.DefaultWorkingDirectory)/target/'
              Contents: '*'
-             TargetFolder: '{tomcatHome}\webapps'
+             TargetFolder: '{tomcatHome}/'
          - task: CmdLine@2
            inputs:
              script: |
