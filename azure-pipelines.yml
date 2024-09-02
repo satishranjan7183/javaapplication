@@ -19,7 +19,7 @@ stages:
          - task: CopyFiles@2
            inputs:
              SourceFolder: '$(System.DefaultWorkingDirectory)/target/'
-             Contents: '**'
+             Contents: '*'
              TargetFolder: '{tomcatHome}\webapps'
          - task: CmdLine@2
            inputs:
